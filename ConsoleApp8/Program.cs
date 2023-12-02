@@ -24,13 +24,6 @@ namespace DZ6
         protected double coefficient;
         protected double overtime;
 
-        public Person(string name, double coefficient = 1, double overtime = 1)
-        {
-            this.name = name;
-            this.coefficient = coefficient;
-            this.overtime = overtime;
-        }
-
         virtual public double CalculateSalary(double hours)
         {
             if (hours <= defaultNumbersHour)
@@ -66,6 +59,7 @@ namespace DZ6
         override public double CalculateSalary(double hours)
         {
             return base.CalculateSalary(hours);
+			blah blah blah
         }
     }
 
@@ -75,10 +69,6 @@ namespace DZ6
         {
             Console.OutputEncoding = Encoding.Unicode;
             Console.InputEncoding = Encoding.Unicode;
-
-            List<Person> people = new List<Person>();
-            initPeople(people);
-
             List<DateTime> dates = new List<DateTime>();
             initCalendar(dates);
 
